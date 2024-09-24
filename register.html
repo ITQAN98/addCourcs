@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Course</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('./img/bgCl.jpg'); /* استبدل برابط الصورة الخاصة بك */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #333;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.7); /* خلفية شفافة سوداء */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            text-align: center;
+            color: #e0e0e0; /* لون العنوان فاتح */
+            margin-bottom: 20px;
+        }
+
+        label {
+            margin-bottom: 5px;
+            display: block;
+            color: #fff; /* لون النص الأبيض */
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            background-color: rgba(255, 255, 255, 0.1); /* خلفية المدخلات شفافة */
+            color: #fff; /* لون نص المدخلات الأبيض */
+        }
+
+        button {
+            background-color: #800080; /* لون موف داكن */
+            color: white;
+            cursor: pointer;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #9b59b6; /* لون موف أفتح عند التمرير */
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+
+            input, select, button {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Add Course</h2>
+
+        <label for="course">Select Course:</label>
+        <select id="course">
+            <option value="course1">Course 1</option>
+            <option value="course2">Course 2</option>
+        </select>
+
+        <label for="teacher">Select Teacher:</label>
+        <select id="teacher">
+            <option value="teacher1">Teacher 1</option>
+            <option value="teacher2">Teacher 2</option>
+        </select>
+
+        <label for="school">Select School:</label>
+        <select id="school">
+            <option value="school1">School 1</option>
+            <option value="school2">School 2</option>
+        </select>
+
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" placeholder="Enter amount" required>
+
+        <button type="submit">Add Course</button>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('./img/bgTL.jpg'); 
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #fff;
+        }
+
+        .container {
+            background: rgba(170, 130, 200, 0.8); 
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            width: 400px;
+        }
+
+        h2 {
+            color: #fff; 
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: block; 
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            margin-bottom: 15px; 
+        }
+
+        .add-teacher { 
+            background-color: #5e35b1; 
+        }
+        .edit-teacher { 
+            background-color: #7e57c2; 
+        }
+        .view-teacher { 
+            background-color: #9e77e1;
+         }
+
+        .button:hover {
+            opacity: 0.9; 
+            transform: translateY(-2px);
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Teacher List</h2>
+        <button class="button add-teacher">Add Teacher</button>
+        <button class="button edit-teacher">Edit Teacher</button>
+        <button class="button view-teacher">View Teachers</button>
+    </div>
+
+</body>
+</html>
