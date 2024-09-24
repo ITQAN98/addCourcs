@@ -12,7 +12,7 @@
             height: 100vh;
             margin: 0;
             padding: 0;
-            background-image: url('./img/bgCl.jpg'); /* رابط الصورة الخلفية */
+            background-image: url('./img/bgCl.jpg');
             background-size: cover;
             background-position: center;
             justify-content: center;
@@ -20,76 +20,76 @@
         }
 
         .login-container {
-            background-color: rgba(128, 0, 128, 0.9); /* لون موف شفاف */
-            padding: 20px; /* تقليل الحشو */
+            background-color: rgba(128, 0, 128, 0.9);
+            padding: 20px;
             border-radius: 15px;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            max-width: 400px; /* تقليل العرض الأقصى */
+            max-width: 400px;
             width: 90%;
         }
 
         h2 {
-            margin-bottom: 20px; /* تقليل المسافة السفلية */
-            font-size: 24px; /* حجم خط أصغر */
-            color: #fff; /* لون النص الأبيض */
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #fff;
             text-align: center;
         }
 
         .input-container {
             position: relative;
             width: 100%;
-            margin-bottom: 15px; /* تقليل المسافة بين المدخلات */
+            margin-bottom: 15px;
         }
 
         input {
             width: 100%;
-            padding: 12px 50px 12px 40px; /* تعديل الحشو */
+            padding: 12px 40px;
             border-radius: 5px;
-            border: 1px solid #800080; /* موف داكن */
+            border: 1px solid #800080;
             box-sizing: border-box;
             font-size: 16px;
             transition: border-color 0.3s;
-            background-color: rgba(255, 255, 255, 0.1); /* خلفية شفافة */
-            color: #fff; /* لون نص المدخلات */
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
         }
 
         input:focus {
-            border-color: #6a0dad; /* موف أفتح عند التركيز */
+            border-color: #6a0dad;
             outline: none;
         }
 
         .icon {
             position: absolute;
-            left: 15px; /* موقع الأيقونة */
+            left: 10px;
             top: 50%;
             transform: translateY(-50%);
-            color: #800080; /* موف داكن */
+            color: #800080;
             font-size: 20px;
-            pointer-events: none; /* يمنع تداخل الأيقونة مع المدخلات */
+            pointer-events: none;
         }
 
         select {
             width: 100%;
-            padding: 12px; /* تقليل الحشو */
+            padding: 12px;
             border-radius: 5px;
-            border: 1px solid #800080; /* موف داكن */
+            border: 1px solid #800080;
             margin-top: 10px;
             font-size: 16px;
-            background-color: rgba(255, 255, 255, 0.1); /* خلفية شفافة */
-            color: #fff; /* لون نص المدخلات */
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
         }
 
         button {
             width: 100%;
-            padding: 12px; /* تقليل الحشو */
-            margin-top: 15px; /* تقليل المسافة بين الزر والمدخلات */
+            padding: 12px;
+            margin-top: 15px;
             border-radius: 5px;
             border: none;
-            background-color: #800080; /* لون موف داكن */
+            background-color: #800080;
             color: white;
             font-weight: bold;
             font-size: 16px;
@@ -97,14 +97,14 @@
         }
 
         button:hover {
-            background-color: #9b59b6; /* موف أفتح عند التمرير */
+            background-color: #9b59b6;
             transform: translateY(-2px);
         }
 
         .register-link {
-            margin-top: 15px; /* تقليل المسافة العلوية */
+            margin-top: 15px;
             font-size: 14px;
-            color: #fff; /* لون النص الأبيض */
+            color: #fff;
             text-align: center;
         }
 
@@ -119,16 +119,19 @@
 
         @media (max-width: 768px) {
             .login-container {
-                padding: 15px; 
+                padding: 15px;
             }
         }
 
         @media (max-width: 480px) {
             .login-container {
-                padding: 10px; 
+                padding: 10px;
             }
             input, button, select {
-                padding: 10px; 
+                padding: 10px;
+            }
+            .icon {
+                display: none; 
             }
         }
     </style>
